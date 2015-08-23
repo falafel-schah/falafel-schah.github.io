@@ -1,0 +1,461 @@
+/* Eric Meyer's CSS Reset
+____________________________________________________________
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, hr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+:focus, :active {
+	outline: 0;
+}
+
+body {
+	text-align: center;
+	background: #FFF url('images/main_bg.jpg') 0 0 repeat-x;
+	color: #666;
+	font: normal 14px Helvetica, Arial;
+	line-height: 20px;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #090;
+}
+
+a:hover,
+a:focus {
+	background-color: #EEE;
+}
+
+a:active {
+	color: #FFF;
+	background-color: #090;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+abbr {
+	border-bottom: 1px dotted #CCC;
+	cursor: help;
+}
+
+ul {
+	list-style: none;
+}
+
+/* WRAP
+==============================================*/
+
+#wrap {
+	width: 750px;
+	margin: 0 auto;
+	clear: left;
+	text-align: left;
+}
+
+/* HEADER
+==============================================*/
+
+#header {
+	width: 520px;
+	height: 28px;
+	padding: 20px 51px 172px 240px;
+	margin: 0 auto;
+	position: relative;
+	background: url('images/header_bg.jpg') 200px 0 no-repeat;
+}
+
+h1 {
+	width: 200px;
+	height: 260px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+h1 a {
+	display: block;
+	width: auto;
+	height: 260px;
+	background: url('images/title_bg.jpg') 0 0 no-repeat;
+}
+
+h1 {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+#nav {
+	width: 520px;
+	height: 28px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #BBB;
+	clear: left;
+}
+
+	#nav li {
+		width: auto;
+		height: 28px;
+		_width: 1%; /* IE6-Hack */
+		margin-right: 10px;
+		float: left;
+		display: inline;
+	}
+	
+		#nav li a {
+			display: block;
+			height: 28px;
+			padding: 0 7px;
+			line-height: 28px;
+			font-weight: bold;
+			font-size: 15px;
+			border-radius: 7px;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+		}
+		
+		#nav li a:link,
+		#nav li a:visited {
+			color: #333;
+		}
+		
+		#nav li a:hover,
+		#nav li a:focus,
+		#nav li.active a:link,
+		#nav li.active a:visited {
+			color: #FFF;
+			background-color: #999;
+		}
+		
+		#nav li a:active,
+		#nav li.active a:hover,
+		#nav li.active a:focus {
+			color: #FFF;
+			background-color: #666;
+		}
+		
+		#nav li.active a:active {
+			color: #FFF;
+			background-color: #333;
+		}
+		
+#oeffnungszeiten {
+	height: 36px;
+	padding-top: 14px;
+	border-top: 1px solid #FFF;
+	clear: left;
+}
+
+	#oeffnungszeiten dt,
+	#oeffnungszeiten dd {
+		float: left;
+		display: inline;
+		height: 18px;
+		font-size: 11px;
+		line-height: 18px;
+		color: #333;
+	}
+	
+	#oeffnungszeiten dt {
+		width: 100px;
+		font-weight: bold;
+	}
+	
+	#oeffnungszeiten dd {
+		width: 420px;
+	}
+
+.web20 {
+	position: absolute;
+	width: 84px;
+	height: 32px;
+	right: 60px;
+	bottom: 20px;
+	clear: left;
+}
+
+	.web20 li {
+		width: 32px;
+		height: 32px;
+		margin-left: 10px;
+		float: left;
+		display: inline;
+	}
+	
+		.web20 li a {
+			display: block;
+			width: 32px;
+			height: 32px;
+			text-indent: -9999px;
+			overflow: hidden;
+			opacity: 0.6;
+			filter: alpha(opacity=60);
+			-moz-opacity: 0.6;
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+			-khtml-opacity: 0.6;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+		}
+		
+		.web20 li a:hover,
+		.web20 li a:focus {
+			background-color: transparent;
+			opacity: 1;
+			filter: alpha(opacity=100);
+			-moz-opacity: 1;
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			-khtml-opacity: 1;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		}
+		
+		.web20 li a:active {
+			background-color: transparent;
+			position: relative;
+			top: 1px;
+		}
+		
+		.web20 li .facebook {
+			background: url('images/facebook.png') 0 0 no-repeat;
+			_background: url('images/facebook.gif') 0 0 no-repeat; /* IE6-Hack */
+		}
+		
+		.web20 li .twitter {
+			background: url('images/twitter.png') 0 0 no-repeat;
+			_background: url('images/twitter.gif') 0 0 no-repeat; /* IE6-Hack */
+		}
+
+/* SIDEBAR
+==============================================*/
+
+#sidebar {
+	width: 200px;
+	margin: 60px 40px 30px 0;
+	float: left;
+	visibility: hidden;
+}
+
+h4 {
+	padding-left: 10px;
+	font-size: 16px;
+	color: #444;
+}
+
+#twitter_update_list {
+	padding: 5px 10px 0 10px;
+	margin: 5px 0;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	background-color: #F3F3F3;
+}
+
+#twitter_update_list li {
+	padding: 5px 0;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #DDD;
+	font-size: 11px;
+	overflow: hidden;
+}
+	
+	#twitter_update_list li a:hover,
+	#twitter_update_list li a:focus {
+		text-decoration: underline;
+	}
+
+#twitter_update_list li span {
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #444;
+}
+
+#twitter_update_list li.firstTweet {
+	padding-top: 0;
+	border-top: none;
+}
+
+#twitter_update_list li.lastTweet {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.more_news {
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+#bula_link {
+	display: block;
+	width: 200px;
+	height: 45px;
+	margin: 3px 0 20px 0;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url('images/bundeslager-2010.jpg') 0 0 no-repeat;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	-khtml-opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+#bula_link:hover,
+#bula_link:focus {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	-khtml-opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/* CONTENT
+==============================================*/
+
+#content {
+	width: 510px;
+	margin-top: 30px;
+	float: left;
+}
+
+	h2 {
+		margin-bottom: 20px;
+		font-size: 28px;
+		line-height: 32px;
+		letter-spacing: 2px;
+		color: #444;
+		border-bottom: 10px solid #EEE;
+	}
+
+		h2 span {
+			display: block;
+			padding-bottom: 8px;
+			border-bottom: 1px solid #DDD;
+		}
+		
+		#content p,
+		#content ol {
+			margin-bottom: 20px;
+		}
+		
+		#content em {
+			font: italic 16px Georgia, 'Times New Roman', serif;
+			line-height: 22px;
+			color: #555;
+		}
+		
+		#content ol {
+			padding-left: 26px;
+		}
+		
+			#content ol li {
+				font: italic 18px Georgia, 'Times New Roman', serif;
+				line-height: 22px;
+				color: #555;
+			}
+			
+				#content ol li span {
+					color: #666;
+					font: normal 14px Helvetica, Arial;
+					line-height: 20px;
+				}
+				
+		#content ul {
+			padding-left: 24px;
+			list-style-type: square;
+		}
+		
+			#content ul li {
+				margin-bottom: 10px;
+			}
+				
+				#content ul li .head {
+					display: block;
+					color: #555;
+				}
+				
+				#content ul li .head:after {
+					content: ':';
+				}
+				
+				#content ul li .body {
+					display: block;
+				}
+				
+		.image-caption {
+			margin-bottom: 20px;
+			padding: 4px;
+			border: 1px solid #CCC;
+			background-color: #F3F3F3;
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+		}
+		
+			.image-caption img {
+				margin-bottom: 4px;
+			}
+		
+			#content .image-caption p {
+				margin-bottom: 0;
+				font-size: 12px;
+				color: #333;
+				text-align: center;
+			}
+				
+		.bam {
+			text-align: center;
+			font-size: 92px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #333;
+			line-height: 100px;
+		}
+		
+		.hr {
+			height: 5px;
+			margin-bottom: 20px;
+			background-color: #EEE;
+			border-top: 1px solid #E3E3E3;
+			border-bottom: 1px solid #E3E3E3;
+		}
+		
+			.hr hr {
+				display: none;
+			}
+
+/* FOOTER
+==============================================*/
+#footer {
+	width: 510px;
+	padding: 10px 0 20px 240px;
+	margin-top: 30px;
+	clear: left;
+	border-top: 1px solid #CCC;
+}
+
+
+
